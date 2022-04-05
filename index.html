@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Patrick Schwendemann</title>
+</head>
+<body>
+<header>
+    <div class="container-welcome" id="welcome">
+        <div class="navbar">
+            <nav>
+                <ul id="menu-items">
+                    <li class="list"><a href="#welcome">Home</a></li>
+                    <li class="list"><a href="#aboutMe">About Me</a></li>
+                    <li class="list"><a href="#application">Bewerbung</a></li>
+                    <li class="list"><a href="#skills">Skills</a></li>
+                    <li class="list"><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            <img src="assets/graphic/menu.svg" id="menu-icon" onclick="menutoggle()" alt="Menu_Icon">
+        </div>
+        <div class="container-mini">
+            <h1>Herzlich willkommen, <br> zu meiner interaktiven Bewerbung</h1>
+            <br>
+            <p>Erfahren Sie mehr über mich, meine Skills, meine Vergangenheit und meine Zukunftspläne</p>
+            <a href="#aboutMe" class="btn" >Explore</a>
+        </div>
+    </div>
+</header>
+<a href="#welcome"><img src="assets/graphic/scroll.svg" id="scroll-icon" alt="scroll-icon"></a>
+<div class="container-about-me" id="aboutMe">
+    <div class="row">
+        <div class="col-2">
+            <h1>About Me</h1>
+            <p>Mein Name ist Patrick Schwendemann und ich bin 28 Jahre alt. <br> Sport ist neben kreativer Arbeit ein
+                wichtiger Teil meines Lebens. <br> Kraft- und Ausdauertraining hilft mir, neue Ideen zu entwickeln.
+                <br><br>
+                Als ich vor ein paar Jahren die Webentwicklung entdeckte, wusste ich, darin liegt meine Zukunft.
+            </p>
+        </div>
+        <div class="col-2">
+            <img src="assets/images/me.png" alt="Portrait">
+        </div>
+    </div>
+</div>
+
+<!--------------------application-------------------->
+
+<div class="container-application-background">
+    <div class="container-application" id="application">
+        <h1>Bewerbung</h1>
+        <br><br><br>
+        <p>
+            <span style="float: right">Schutterwald, 20.03.2022</span> <br>
+            Patrick Schwendemann <br>
+            Lindenweg 6 <br>
+            77746 Schutterwald <br>
+            Tel.: 0176 84177006 <br>
+            patrick.schwendemann1993@gmail.com <br>
+            <br><br><br>
+            <strong>Bewerbungsschreiben für meine Bachelorarbeit im Bereich Fullstack Webentwicklung, 
+            Wintersemester 22/23</strong>
+            <br><br><br>
+            Sehr geehrte Damen und Herren,
+            <br><br>
+            Kreativität und logisches Denken zeichnen mich aus, deshalb sehe ich meine berufliche Karriere im Bereich der 
+            Fullstack Webentwicklung. Aktuell studiere ich im 8. Semester Medien- und Informationswesen an der Hochschule 
+            Offenburg. Daher kann ich sowohl praktische Erfahrungen im Bereich Frontend (HTML, CSS und JavaScript), als auch 
+            im Bereich Backend (SQL, MongoDB oder PHP) vorweisen. Diese möchte ich Ihnen im Rahmen meines Bachelorpraktikums 
+            von September 2022 bis Februar 2023 bei unter Beweis stellen.
+            <br><br>
+            An meinem Studium begeistert mich besonders der Bereich Informatik. In Projektarbeiten kann ich mein Wissen regelmäßig 
+            praktisch anwenden. Dieses Semester bearbeite ich unter anderem das Thema „Vergleich von Backend-Programmiersprachen 
+            für Web-Anwendungen“. Hier erstelle ich in einer Gruppe Backend-Anwendungen mit verschiedenen Programmiersprachen, 
+            wie PHP, Java, Node oder Python. Auch privat arbeite ich gerne an Web-Projekten, wie beispielsweise der Einrichtung eines 
+            eigenen Webservers, auf welchen ich meine Webanwendungen hochlade. Zudem habe ich eine App programmiert, um mein Wissen 
+            über die Technologien, React und TypeScript unter Beweis zu stellen. Neben meinen Kenntnissen in 
+            der Informatik kann ich auch Fähigkeiten in der Bearbeitung sämtlicher Medien vorweisen. Daher stellt sich mir keine 
+            Herausforderung, neben der Erstellung von Webanwendungen, auch den dazugehörigen Content zu erstellen und zu bearbeiten.
+            <br><br>
+            Durch Praktika und Arbeitstätigkeiten in diversen Bereichen habe ich eine ausgeprägte Kommunikations- und Teamfähigkeit 
+            entwickelt. Diese durfte ich, unter anderem während meines Praktikums bei Schanze & Horn (Südkurier Medienhaus), 
+            unter Beweis stellen.
+            <br><br>
+            Sie wollen den Menschen kennenlernen, der hinter diesen Zeilen steht? Dann freue ich mich auf Ihre Einladung zum Vorstellungsgespräch.
+            <br><br>
+            Mit freundlichen Grüßen <br><br> Patrick Schwendemann
+        </p>
+    </div>
+</div>
+
+<!--------------------skills-------------------->
+
+<div class="skills" id="skills">
+    <div class="container-controll">
+        <div class="skill-btn">
+            <span onclick="backend()" >Backend</span>
+            <span onclick="frontend()" >Frontend</span>
+            <hr id="indicator">
+        </div>
+    </div>
+    <div class="container-skill">
+        <div class="card" id="backend">
+            <div class="row">
+                <div class="col-2">
+                    <ul class="items">
+                        <li>Node:</li>
+                        <li>SQL:</li>
+                        <li>NoSQL:</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <div class="rating">
+                        <ul>
+                            <li><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="frontend">
+            <div class="row">
+                <div class="col-2">
+                    <ul class="items">
+                        <li>HTML, CSS, JS:</li>
+                        <li>React:</li>
+                        <li>TypeScript:</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <div class="rating">
+                        <ul>
+                            <li><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--------------------footer-------------------->
+
+<div class="footer" id="contact">
+    <div class="container-footer">
+        <div class="contact">
+            <a href="https://www.instagram.com/p_art_rick/"><img src="assets/graphic/instagram.svg" alt="Instagram_Logo"></a>
+            <a href="tel:+4917684177006"><img src="assets/graphic/phone.svg" alt="Phone_Logo"></a>
+            <a href="mailto:patrick.schwendemann1993@gmail.com"><img src="assets/graphic/email.svg" alt="Mail_Logo"></a>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 - Patrick Schwendemann</p>
+    </div>
+</div>
+<script SRC="script.js"></script>
+</body>
+</html>

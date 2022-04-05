@@ -1,0 +1,43 @@
+//----------------------footer---------------------------
+
+.footer{
+  background-color: black;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+  text-align: center;
+
+  .contact{
+    display: flex;
+    justify-content: center;
+
+
+    img{
+      width: 45px;
+      margin:0 10px 0 10px;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    img:hover{
+      transform: scale(1.5);
+    }
+  }
+
+  p{
+    color: #8a8a8a;
+  }
+
+  hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+
+    max-width: 1300px;
+
+    margin:20px auto 0 auto;
+  }
+}
+
+.copyright{
+  text-align: center;
+}
